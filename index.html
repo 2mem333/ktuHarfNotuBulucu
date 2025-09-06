@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ktü harf notu hesaplama</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="style.css?v=1" />
+</head>
+<body>
+<div class="header-bar">
+  <img src="ktulogo.png" alt="" class="logo">
+  <div class="header-text"> 
+    <div class="purpose">Karadeniz Teknik Üniversitesi not hesaplama | BETA</div>
+    <div class="description">iletişim: desktopbotsup@gmail.com</div>
+  </div>
+</div>
+
+<div class="container">
+    <h1>Harfli Not Hesaplama</h1>
+
+    <div class="input-group">
+      <label for="sinifOrt">Sınıf Ortalaması:</label>
+      <input id="sinifOrt" class="textBoxGiris" />
+    </div>
+
+    <div class="input-group">
+      <label for="stdSapma">Standart Sapma:</label>
+      <input id="stdSapma" class="textBoxGiris" />
+    </div>
+
+    <div class="input-group">
+      <label for="vizeNotu">Vize Notu:</label>
+      <input id="vizeNotu" class="textBoxGiris"/>
+    </div>
+
+    <div class="input-group">
+      <label for="finalNotu">Final/Büt Notu:</label>
+      <input id="finalNotu" class="textBoxGiris"/>
+    </div>
+
+    <div class="button-group">
+      <button id="hesaplaBtn" class="butonHesapla">Harf Notu Hesapla</button>
+    </div>
+
+    <div class="output" id="output"></div>
+    <div class="reverse-output" id="reverseOutput"></div>
+      <div class="detaylar" id="detaylar"></div>
+
+      <div id="toggleOutputs" class="toggle-outputs">
+      dg
+      </div>
+
+  </div>
+
+  <div class="button-group" style="margin-top: 1rem; text-align: center;">
+  <button id="defaultsBtn" class="butonHesapla">Eski İstatistikler</button>
+</div>
+
+<!-- 2. Panel: başlangıçta gizli -->
+<div id="defaultsPanel" class="defaults-panel">
+  <table>
+    <thead>
+      <tr>
+        <th>Ders Adı</th>
+        <th>Sınıf Ort.</th>
+        <th>Std. Sapma</th>
+        <th>Akademisyen</th>
+        <th>Yıl</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-sinif="49.93" data-std="17.78">
+        <td>Ayrık Matematik</td>
+        <td>49,93</td>
+        <td>17,78</td>
+        <td>Vasıf Nabiyev</td>
+        <td>2024</td>
+      </tr>
+      <tr data-sinif="42.43" data-std="15.33">
+        <td>Elektronik Devreler</td>
+        <td>42,43</td>
+        <td>15,33</td>
+        <td>Tuğrul Çavdar</td>
+        <td>2024</td>
+      </tr>
+      <tr data-sinif="75.37" data-std="14.52">
+        <td>Elektronik Lab.</td>
+        <td>75,37</td>
+        <td>14,52</td>
+        <td>Beste Üstübioğlu</td>
+        <td>2024</td>
+      </tr>
+      <tr data-sinif="81" data-std="0">
+        <td>Data Structures</td>
+        <td>81,00</td>
+        <td>0,00</td>
+        <td>Ömer Çakır</td>
+        <td>2024</td>
+      </tr>
+      <tr data-sinif="39.09" data-std="15.72">
+        <td>Dijital Design</td>
+        <td>39,09</td>
+        <td>15,72</td>
+        <td>Sedat Görmüş</td>
+        <td>2024</td>
+      </tr>
+      <tr data-sinif="64.51" data-std="17.07">
+        <td>OOP</td>
+        <td>64,51</td>
+        <td>17,07</td>
+        <td>Bahar Hatipoğlu Yılmaz</td>
+        <td>2024</td>
+      </tr>
+      <tr data-sinif="55.73" data-std="18.07">
+        <td>Dif. Denklemler</td>
+        <td>55,73</td>
+        <td>18,07</td>
+        <td>İdris Ören</td>
+        <td>2024</td>
+      </tr>
+      <tr data-sinif="" data-std="13.05">
+        <td>Yazılım Müh.</td>
+        <td></td>
+        <td>13,05</td>
+        <td>Sedat Görmüş</td>
+        <td>2022</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+  <script src="main.js?v=1"></script>
+</body>
+</html>
